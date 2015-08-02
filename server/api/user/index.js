@@ -17,3 +17,4 @@ router.post('/', controller.create);
 module.exports = router; 
 
 
+console.log('Hello Ruman');
