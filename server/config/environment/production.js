@@ -18,6 +18,6 @@ module.exports = {
     uri:    process.env.MONGOLAB_URI ||
             process.env.MONGOHQ_URL ||
             process.env.OPENSHIFT_MONGODB_DB_URL+process.env.OPENSHIFT_APP_NAME ||
-            'mongodb://wirlzy:Baigan@123@ds043348.mongolab.com:43348/wirlzylearning'
+            'mongodb://wirlzy1:Baigan@ds043348.mongolab.com:43348/wirlzylearning'
   }
 };
