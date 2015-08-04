@@ -30,5 +30,8 @@ grunt serve
 The application will run at `http://localhost:9000/`
 
 ## Learning Resources
+* Angular StyleGuide - [https://github.com/johnpapa/angularjs-styleguide](https://github.com/johnpapa/angularjs-styleguide)
 * Yeoman, Grunt, Bower - [http://www.pluralsight.com/courses/build-process-workflows-tooling-gruntjs](http://www.pluralsight.com/courses/build-process-workflows-tooling-gruntjs)
 * Angular Testing - [http://www.pluralsight.com/courses/play-by-play-angular-testing-papa-bell](http://www.pluralsight.com/courses/play-by-play-angular-testing-papa-bell)
+* ExpressJS - [http://www.pluralsight.com/courses/expressjs](http://www.pluralsight.com/courses/expressjs)
+* MEAN Stack - [http://www.pluralsight.com/courses/building-angularjs-nodejs-apps-mean](http://www.pluralsight.com/courses/building-angularjs-nodejs-apps-mean)
