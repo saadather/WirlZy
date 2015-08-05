@@ -46,8 +46,6 @@ We use pull requests, and consequentially the forking model.  To make a contribu
 
 When you're making changes to your fork, you'll push to your fork with `git push origin master`, and your pull request will get automatically updated with the latest pushes you've made.
 
-When your pull request gets approved by someone, this means you're able to push to jenkins with `git push jenkins master`. Clicking the "Merge" button will not merge into master since we used gated builds. This means that Jenkins is the only one who is capable of pushing to master to ensure our repository stays clean.
-
 To summarize, this is the process:
 
 1. You fork the WirlZy repository
@@ -57,7 +55,6 @@ To summarize, this is the process:
 5. Someone reviews your code and gives you feedback
 6. Eventually, your code will get approved
 7. You pull the latest changes (`git pull upstream master`)
-8. Your code gets merged
 
 Keeping your fork up-to-date
 ----------------------------
