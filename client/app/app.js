@@ -6,8 +6,14 @@ angular.module('wirlZyApp', [
   'ngSanitize',
   'btford.socket-io',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'ngLocalize',
+  'ngLocalize.Events'
 ])
+  .value('localeSupported', [
+    'en-US',
+    'ar-SA'
+  ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
       .otherwise('/');
@@ -42,7 +48,9 @@ angular.module('wirlZyApp', [
     };
   })
 
-  .run(function ($rootScope, $location, Auth) {
+  .run(function ($rootScope, $location, Auth, locale, localeEvents) {
+    $rootScope.setLocale = locale.setLocale;
+    $rootScope.locale = locale.getLocale();
     // Redirect to login if route requires auth and you're not logged in
     $rootScope.$on('$stateChangeStart', function (event, next) {
       Auth.isLoggedInAsync(function(loggedIn) {
@@ -50,6 +58,9 @@ angular.module('wirlZyApp', [
           event.preventDefault();
           $location.path('/login');
         }
+      });
+      $rootScope.$on(localeEvents.localeChanges, function () {
+        $rootScope.locale = locale.getLocale();
       });
     });
   });
