@@ -6,6 +6,7 @@ angular.module('wirlZyApp')
       templateUrl: 'app/directives/firstDirective/firstDirective.html',
       restrict: 'EA',
       link: function (scope, element, attrs) {
+      	
       }
     };
   });
